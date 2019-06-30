@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+    "navigationBarTitleText": "生成朋友圈图片",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+}

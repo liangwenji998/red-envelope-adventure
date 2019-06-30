@@ -1,0 +1,10 @@
+<view class='mian'>
+  <view class='content'>
+        <canvas style="width: {{canvasWidth}}px; height:{{canvasheight}}px; border-radius: 20px;top:20px; margin-left: 20px; margin-left: 28px" canvas-id="secondCanvas" binderror="canvasIdErrorCallback" id='secondCanvas'></canvas>
+   </view>
+    <view class='btn'>
+      <button type=''  bindtap='save'>保存到手机</button>
+      <button type='' bindtap='click'>分享到朋友圈</button>
+    </view>
+</view>
+

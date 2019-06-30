@@ -1,0 +1,21 @@
+<view class='box'>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <view class='userinfo'>
+    <image class='userinfo-img' src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    <view class='money'>
+      <view class='cash'>{{userId}}</view>
+      <view class='yuan'>元</view>
+    </view>
+  </view>
+</view>
+<view class='option'>
+    <view class='text'  bindtap='goto1'>
+      <view class='record'>交易记录</view>
+      <view class='arrow'>></view>
+    </view>
+    <view class='text'  bindtap='goto2'>
+      <view class='record'>常见问题</view>
+      <view class='arrow'>></view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<view class='main'>
+  <view class='content' >
+    <view class='logo' >
+      <image src='../../images/logo.png'  style="height: {{height3}}px;width: {{height3}}px;" animation="{{abcData}}"></image>
+    </view>
+    <view class='button_login'  style="  margin-top: {{button}}px;">
+      <button open-type='getUserInfo' bindgetuserinfo="enter" lang='zh_CN'>开始冒险</button>
+    </view>
+  </view>
+</view>
+  <view class='bg'>
+    <image src='https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3597341440,2478965558&fm=26&gp=0.jpg'></image>
+  </view>

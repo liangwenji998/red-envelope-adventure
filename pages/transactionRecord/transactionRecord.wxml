@@ -1,0 +1,16 @@
+<!--pages/transactionRecord/transactionRecord.wxml-->
+<!-- 交易记录页面 -->
+<view class='page'>
+  <!-- 循环 -->
+  <view class='transaction' wx:for='{{list}}' wx:key='this'>
+    <!-- 左部分 -->
+    <view class='left'>
+      <text>{{item.content}}\n</text>
+      <text class='leftTow'>{{item.time}}</text>
+    </view>
+    <!-- 右部分 -->
+    <view class='right'>
+      <text class='{{item.sum}}'>{{item.sum}}元</text>
+    </view>
+  </view>
+</view>

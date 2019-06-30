@@ -1,0 +1,37 @@
+<!--pages/index/fabu/fabu.wxml-->
+<view class='body'>
+  <view class='cover'>
+    <view class="img"><image src="{{userInfo.avatarUrl}}"></image></view>
+  </view>
+  <view class='all'>
+    <view class='both'>
+      <view class='renwu'>
+        <view class='yaoqiu'>任务要求</view>
+        <view class='shuru'>
+          <input placeholder='请输入文字（24字内）' bindinput='yaoqiu'></input>
+          <view>
+            <image src='../../../images/info-circle.png' style='width:25px;height:25px;'></image>
+          </view>
+        </view>
+      </view>
+      <view class='ts'>小伙伴们任务通过即可领取随机金额的红包</view>
+      <view class='shangjin'>
+        <view class='yaoqiu'>总赏金</view>
+        <view class='shuru'>
+          <input placeholder='填写金额' bindinput='jine'></input>
+          <view>元</view>
+        </view>
+      </view>
+      <view class='hongbao'>
+        <view class='yaoqiu'>红包数</view>
+        <view class='shuru'>
+          <input placeholder='填写红包数量' bindinput='shuliang'></input>
+          <view>个</view>
+        </view>
+      </view>
+      <view class='ts'>红包个数即为可做任务的最多人数</view>
+    </view>
+    <button bindtap='jump'>发布任务</button>
+    <view class='ts1'>赏金上限200元，红包个数上限100个，平台收取1%的服务费</view>
+  </view>
+</view>

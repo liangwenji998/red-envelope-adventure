@@ -1,0 +1,19 @@
+<!--pages/FAQ/FAQ.wxml-->
+<!-- 常见问题页面 -->
+<view class='page'>
+  <!-- 循环 -->
+  <block wx:for='{{list}}' wx:key='that'>
+    <!-- 框 -->
+    <view class='frame'>
+      <!-- 标题 -->
+      <view class='title' bindtap='look' data-id="{{item.length}}">
+        <text>{{item.title}}</text>
+        <image src='{{icon}}'></image>
+      </view>
+      <!-- 详情 -->
+      <view class='details' wx:if="{{(lookOver && item.length == length)}}">
+        <text>{{item.presentation}}</text>
+      </view>
+    </view>
+  </block>
+</view>

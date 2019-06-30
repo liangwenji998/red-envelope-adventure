@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#DC3A2F",
+  "navigationBarTitleText": "交易记录",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {},
+  "enablePullDownRefresh": true
+}

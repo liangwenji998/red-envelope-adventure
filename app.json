@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/welcomepage/welcomepage",
+    "pages/homepage/homepage",
+    "pages/generate_image/generate_image",
+    "pages/task/task",
+    "pages/homepage/fabu/fabu",
+    "pages/examine/examine",
+    "pages/successful/successful",
+    "pages/my/my",
+    "pages/shaomajinru/shaomajinru",
+    "pages/transactionRecord/transactionRecord",
+    "pages/uploadPictures/uploadPictures",
+    "pages/FAQ/FAQ",
+    "pages/imgplus/imgplus"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DC3A2F",
+    "navigationBarTitleText": "WeChat",
+    "enablePullDownRefresh": true,
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#DC3A2F",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/he2.png",
+        "iconPath": "images/he1.png",
+        "pagePath": "pages/homepage/homepage",
+        "text": "玩法盒子"
+      },
+      {
+        "selectedIconPath": "images/renwu2.png",
+        "iconPath": "images/renwu1.png",
+        "pagePath": "pages/task/task",
+        "text": "任务记录"
+      },
+      {
+        "selectedIconPath": "images/my2.png",
+        "iconPath": "images/my1.png",
+        "pagePath": "pages/my/my",
+        "text": "个人记录"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

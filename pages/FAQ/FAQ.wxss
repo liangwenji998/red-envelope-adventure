@@ -1,0 +1,32 @@
+/* pages/FAQ/FAQ.wxss */
+/*常见问题页面*/
+
+/*设置背景颜色*/
+page{
+  background: rgb(245, 245, 245)
+}
+/*设置框*/
+.frame{
+  background: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  padding: 25rpx;
+  margin-top: 30rpx;
+  font-size: 32rpx
+}
+/*设置标题*/
+.title{
+  color: #aaa;
+}
+/*设置图片*/
+.title image{
+  width: 40rpx;
+  height: 40rpx;
+  float: right
+}
+/*设置详情*/
+.details{
+  border-top: 1px solid #aaa;
+  margin-top: 20rpx;
+}

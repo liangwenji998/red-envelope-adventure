@@ -1,0 +1,21 @@
+<!--pages/successful/successful.wxml-->
+<view class='body'>
+  <view class='top' id='top'>
+    <view class='Redenvelopes'>
+      <view class='headbox'>
+        <image class='headurl' src='{{userInfo.avatarUrl}}'></image>
+      </view>
+      <text class='tips'>发布了一个大冒险红包</text>
+      <text class='topzi'>完成大冒险即可领取红包</text>
+      <view class='hongbaoedu'>
+        <view class='circle'>
+          此处为小程序二维码
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='buttons' style='height:{{height-40}}px'>
+    <button class='share' open-type="share">分享给好友或群聊</button>
+    <button class='generate' catchtap='goto'>生成朋友圈图片</button>
+  </view>
+</view>

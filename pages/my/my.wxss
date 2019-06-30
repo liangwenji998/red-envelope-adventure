@@ -1,0 +1,72 @@
+page{
+  background-color: #F5F5F5;
+  font-size: 35rpx;
+}
+.userinfo-img{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border:1px solid #a0a0a0;
+  margin-top: 60rpx;
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-nickname{
+  margin-top: 20rpx;
+}
+.box{
+  background-color: #ffffff;
+  height: 500rpx;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+}
+.money{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+}
+.cash{
+  color: #dc3a2f;
+  font-size: 35px;
+}
+.yuan{
+  color: #dc3a2f;
+  font-size: 15px;
+  margin-top: 30rpx;
+}
+.option{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  color: #a0a0a0;
+  align-items: center;
+  background: white;
+  width: 98%;
+  height: 80rpx;
+  border-radius: 15rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  line-height: 2.2;
+}
+.record{
+  width: 80%;
+  height: 100%;
+  line-height: 2.2;
+  text-indent: 30rpx;
+}
+.arrow{
+  width: 20%;
+  height: 100%;
+  line-height: 2.2;
+  text-align: center;
+}
+

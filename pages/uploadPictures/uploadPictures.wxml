@@ -1,0 +1,47 @@
+<!--pages/uploadPictures/uploadPictures.wxml-->
+<!-- 上传照片页面 -->
+<view class='page'>
+  <!-- 设置上部分 -->
+  <view class='top'> 
+    <view class='head'>
+      <view class='title'>
+        <text>{{title.claim}}</text>
+      </view>
+    </view>
+    <view class='money'>
+        <text class='number'>{{title.bounty}}</text>
+        <text class='string'>元</text>
+      </view>
+  </view>
+  <!-- 设置下部分 -->
+  <view  class='center'>
+    <text>任务图片</text>
+  </view>
+  <view class='donw'>
+    <view class='images'>
+      <!-- 选择的图片 -->
+      <image src='{{img}}'  bindtap='add'></image>
+      <!-- 图片取消按钮 -->
+      <icon wx:if='{{query}}' type="clear" size="20" color='red' class='cencel' bindtap='cencel'/>
+    </view>
+    <view class='addText'>
+      <text>添加文字</text>
+      <!-- 输入框 -->
+      <input  placeholder="最多添加15个字" 
+              maxlength="15" 
+              type="tel" 
+              bindinput="getWords" />  
+    </view>
+    <view class='open'>
+      <text>向参与者公开照片</text>
+      <!-- 是否公开选择按钮 -->
+      <view class='{{map}}' bindtap='choose'>
+        <view class='or' animation="{{animation}}"></view>
+      </view>
+    </view>
+  </view>
+  <!-- 上传照片按钮           判断是否有照片 -->
+  <view class='upload' bindtap="{{query == true ? 'upload' : 'hint'}}">
+    <button>上传照片</button>
+  </view>
+</view>

@@ -1,0 +1,137 @@
+/* pages/uploadPictures/uploadPictures.wxss */
+/* 上传照片页面 */
+page{
+  background: rgb(245, 245, 245)
+}
+/*设置红包背景样式*/
+.top{
+  background: #C63329;
+  height: 400rpx;
+  width: 100%
+}
+/* 设置红包样式*/
+.head{
+  width: 100%;
+  height: 260rpx;
+  border-bottom-left-radius:1000%;
+  border-bottom-right-radius: 1000%;
+  background: #DC3A2F; 
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(61, 60, 60, 0.1);
+}
+/*设置标题*/
+.title{
+  color: rgb(238, 204, 156);
+  font-size: 40rpx;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 60rpx
+}
+
+/*设置金额样式*/
+.money{
+  width: 230rpx;
+  height: 230rpx;
+  border-radius: 50%;
+  background: rgb(238, 204, 156);
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: -110rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+  color: #DC3A2F
+}
+/*金额*/
+.number{
+  font-size: 60rpx
+}
+/*元*/
+.string{
+  font-size: 35rpx;
+  display: block;
+  float: left
+}
+/*中间那个字*/
+.center{
+  font-size: 35rpx;
+  color: #aaa;
+  margin: 20rpx 40rpx;
+}
+/*任务图片、文字、选项*/
+.donw{
+  width: 100%;
+
+  background-color:  #fff;
+}
+.images{
+  padding: 20rpx 0rpx;
+  margin-left:40rpx; 
+  border-bottom: 5rpx solid rgb(245, 245, 245);
+  align-items:flex-start;
+  display: flex;
+}
+/*设置图片大小*/
+.images image{
+  width: 120rpx;
+  height: 120rpx;
+  padding: 10rpx;
+  border-bottom: 5rpx solid rgb(214, 214, 214);
+  border-top: 5rpx solid rgb(214, 214, 214);
+  border-left: 1rpx solid rgb(214, 214, 214);
+  border-right: 1rpx solid rgb(214, 214, 214);
+}
+/*添加文字描述*/
+.addText{
+  padding: 20rpx;
+  margin: 0rpx 20rpx;
+  font-size: 40rpx;
+  border-bottom: 3rpx solid #aaa
+}
+.addText input{
+  float: right;
+  color: rgb(208, 208, 208);
+  font-size: 38rpx;
+  width: 500rpx
+}
+/*向参与者公开照片*/
+.open{
+  padding: 20rpx 40rpx;
+  font-size: 40rpx;
+}
+/*设置选择按钮*/
+.map{
+  width: 130rpx;
+  background: rgb(9, 185, 7);
+  border-radius:50rpx; 
+  float: right;
+}
+.mapFalse{
+  width: 130rpx;
+  background: rgb(220, 58, 47);
+  border-radius:50rpx; 
+  float: right;
+}
+.or{
+  width: 60rpx;
+  height: 60rpx;
+  background: rgb(248, 244, 244);
+  border-radius:50rpx; 
+}
+/*上传照片按钮*/
+.upload{
+  margin: 50rpx auto
+}
+.upload button{
+  width: 90%;
+  height: 100rpx;
+  background: rgb(220, 58, 47);
+  color: #fff;
+  font-size: 40rpx
+}
+/*取消*/
+.cencel{
+  margin-left: -20rpx;
+  margin-top: -20rpx 
+}

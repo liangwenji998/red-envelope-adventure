@@ -1,0 +1,4 @@
+<view class='body'>
+  <image src='http://www.gsphome.cn/{{imageUrl}}'></image>
+  <text>{{note}}</text>
+</view>

@@ -1,0 +1,42 @@
+<!--pages/examine/examine.wxml-->
+<view class='body'>
+  <view class='description' id='top'>
+    <view class='task'>
+      {{task.claim}}
+    </view>
+    <view class='totalBounty'>
+      <text class='money'>{{task.totalBounty}}</text>
+      <text class='company'>元</text>
+    </view>
+    <view class='number'>
+      <view class='totalRed'>
+        红包个数：{{task.red}}/{{task.totalRed}}个
+      </view>
+      <view class='numbers'>
+        任务人数：{{task.partner}}/{{task.totalPartner}}人
+      </view>
+    </view>
+    <button class='{{buttonStyle}}' open-type="{{share}}">
+      邀请做任务
+    </button>
+  </view>
+  <view class='participant' id='tips' wx:if="{{ list ==  ''}}">
+    未被领取红包，24小时后退回至小程序账户余额
+  </view>
+  <scroll-view class='scroll' scroll-bottom='{{top}}px' scroll-y='true' bindscrolltolower='paging' lower-threshold='1' style="max-height:{{scrollHeight-5}}px">
+    <view class='partner' wx:key="{{index}}" wx:for="{{list}}" wx:for-item="item">
+      <image class='headimg' src='{{item.headPortrait}}'></image>
+      <text class='node'>{{item.note}}</text>
+      <image class='image' catchtap='imgplus' data-src='{{item.imageUrl}}' data-note='{{item.note}}' src='{{item.imageUrl}}'></image>
+      <view class='state'>
+        <button class='examine' data-task='{{taskId}}' data-id='{{item.userId}}' data-pass='{{pass}}' catchtap='check'  wx:if='{{item.status === "未审核" || item.status === "待审核"}}'>审核
+        </button>
+        <view wx:if='{{item.status === "已通过"}}'>
+          <text class='bounty'>{{item.bounty}}元</text>
+          <text class='date'>{{item.time}}</text>
+        </view>
+        <text class='examineing' wx:if='{{item.status === "未通过"}}'> 未通过</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,106 @@
+/* pages/shaomajinru/shaomajinru.wxss */
+page{
+  background: rgb(245, 245, 245);
+}
+.top{
+  width: 100%;
+  height: 500rpx;
+  background-color: #dc3a2f;
+}
+.text{
+  width: 600rpx;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40rpx;
+  color: #EECC9C;
+}
+.shengyu{
+  color: #EECC9C;
+  text-align: center;
+}
+.yue{
+  font-size: 40px;
+}
+.hongren{
+  font-size: 16px;
+  display: flex;
+  margin-top: 20rpx;
+  flex-direction: row;
+  justify-content:space-between;
+  color: white;
+}
+.hong{
+  margin-left: 20rpx;
+}
+.ren{
+  margin-right: 20rpx;
+}
+button{
+  width: 660rpx;
+  color: #dc3a2f;
+  background-color: #EECC9C;
+  margin-top: 30rpx;
+}
+.center{
+  width: 100%;
+  color: rgb(134, 134, 134);
+  background-color: rgb(223, 222, 222);
+  font-size: 32rpx;
+  padding: 30rpx;
+}
+.btall{
+  width: 98%;
+  height: 120rpx;
+  margin: auto;
+  border-radius: 20rpx;
+  background: white;
+  margin-top: 20rpx;
+}
+.bottom{
+  display: flex;
+  justify-content: center;
+  margin: 20rpx;
+}
+.bt{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  margin: auto;
+}
+.bt view{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.bt view:nth-child(2){
+  line-height: 2.5;
+}
+.service_img{
+  width: 35%;
+  height: 100%;
+}
+.status{
+  width: 25%;
+  height: 100%;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-top: 10rpx;
+}
+.nickname{
+  line-height: 3.2;
+}
+.shen{
+  color: #dc3a2f;
+  padding-top: 30rpx;
+}
+.img0{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-top: 9rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText":"任务记录",
+  "navigationBarTextStyle":"white",
+  "enablePullDownRefresh":true
+}

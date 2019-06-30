@@ -1,0 +1,53 @@
+<!--pages/shaomajinru/shaomajinru.wxml-->
+<view class='top'>
+  <view class='text'>{{data.claim}}</view>
+
+  <block wx:if='{{isFirst}}'>
+    <view class='shengyu'>
+      剩余
+      <text class='yue'>{{data.totalBounty}}</text>
+      元
+    </view>
+    <view class='hongren'>
+      <view class='hong'>红包个数：<text>{{data.red}}/{{data.totalRed}}</text>个</view>
+      <view class='ren'>任务人数：<text>{{data.partner}}/{{data.totalPartner}}</text>人</view>
+    </view>
+    <button bindtap='jump'>来张冒险照，领个大红包</button>
+  </block> 
+
+  <block wx:else>
+    <view wx:if="{{userPartnerInfo.status == '已通过'}}" class='shengyu'>
+      {{userPartnerInfo.bounty}}
+    </view>
+    <view wx:else class='shengyu'>
+      {{userPartnerInfo.status}}
+    </view>
+    <button bindtap='meto'>我也发一个</button>
+  </block>
+
+</view>
+
+
+<view class='center'>共{{data.totalRed}}个，已领取<text>{{data.red}}/{{data.totalRed}}</text>个</view>
+
+
+<view class='btall' wx:for='{{list}}' wx:key='this'>
+  <view class='bottom'>
+
+    <view class='bt'>
+      <image class='img' src="{{item.headPortrait}}"></image>
+      <text class="nickname">{{item.note}}</text>
+    </view>
+
+    <view>
+       <image class='img0' src="http://www.gsphome.cn/{{item.imageUrl}}"
+        bindtap='look' data-imageurl='{{item.imageUrl}}'
+        data-note='{{item.note}}'></image>
+    </view>
+
+    <view>
+      <view class='shen' wx:if="{{item.status == '已通过'}}">{{item.bounty}}</view>
+      <view wx:else class='shen'>{{item.status}}</view>
+    </view>
+  </view>
+</view>
